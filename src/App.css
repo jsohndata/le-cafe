@@ -1,14 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: inherit; }
+html { scroll-behavior: smooth; }
+
+* { font-family: 'Roboto Slab', serif; }
+
 body { 
-  background-color: beige;
+  background-color: #112745;
 }
 
 header {
-  background-color: rgba(225, 194, 145, 0.98);
+  background-color: #3f3014;
   position: sticky;
   top: 0;
   padding: 10px;
   filter: drop-shadow(5px 5px 10px #00000032);
 }
+
+header > h1,
+header > p { 
+  color: #7f632a; }
+
+header > h1 { 
+  font-size: calc(24px + 2vw);
+  font-weight: 300;
+}
+ 
 
 nav > button {
   font-size: calc(12px + 0.5vw);
@@ -30,9 +47,38 @@ section {
 }
 
 section > div {
-  flex: 1 0 300px;
+  flex: 1 0 250px;
   padding: 10px;
   margin: 10px;
+}
+
+section > div > h2 {
+  font-size: calc(20px + 1vw);
+  font-weight: 400;
+  color: #7f632a;
+}
+
+section > div > details > summary {
+  font-size: calc(17px + 0.2vw);
+  font-weight: 400;
+  color: #7f632a;
+  margin-top: 10px;
+}
+
+section > div > details > ul {
+  margin-top: 10px;
+  margin-left: 4%;
+}
+
+section > div > details > ul > li {
+  color: #f4f5f6e1;
+}
+
+
+section > div > p {
+  font-size: calc(17px + 0.2vw);
+  color: #f4f5f6e1;
+  font-weight: 300;
 }
 
 img { 
@@ -40,4 +86,14 @@ img {
   aspect-ratio: 1/1;
   border-radius: 6px;
   border: 3px solid #817343;
+}
+
+footer > p {
+  text-align:center;
+  padding-bottom: 30px;
+}
+
+footer > p a:link,
+footer > p a:visited {
+  color: #f4f5f6e1;
 }

@@ -1,7 +1,7 @@
 export default function ListingCard(props) {
     const {title, description, image, ingredients} = props.coffee
 
-    console.log("ListingCard:",props.coffee)
+    console.log("ListingCard:",ingredients)
 
     return(
         <div>
@@ -10,7 +10,9 @@ export default function ListingCard(props) {
             <p>{description}</p>
             <details>
                 <summary>Ingridents</summary>
-                <p>{ingredients}</p>
+                <ul>{ingredients.map( (element,index) => {
+                    return <li>{element}</li>
+                } )}</ul>
             </details>
         </div>
     )

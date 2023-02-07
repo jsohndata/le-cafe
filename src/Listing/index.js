@@ -16,7 +16,7 @@ export default function Listing() {
     return(
         <>
             <header>
-                <h1>Welcome to Coffee</h1>
+                <h1>Le Café de jsohnData</h1>
                 <p>Select your coffee</p>
                 
                 <nav>
