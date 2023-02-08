@@ -14,86 +14,138 @@ header {
   position: sticky;
   top: 0;
   padding: 10px;
-  filter: drop-shadow(5px 5px 10px #00000032);
-}
+  padding-top: 30px;
+  text-align: center;
+  filter: drop-shadow(5px 5px 10px #000000e5);
+  z-index: 999;
+  background-image: url("./assets/images/pexels-photo-172289.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
 
 header > h1,
 header > p { 
   color: #7f632a; }
 
 header > h1 { 
-  font-size: calc(24px + 2vw);
+  font-size: calc(30px + 2vw);
   font-weight: 300;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(127, 70, 17);
 }
- 
+
+nav { margin-top: 20px; }
 
 nav > button {
-  font-size: calc(12px + 0.5vw);
-  font-weight: 700;
-  padding: 10px 30px;
+  background-color: #916749;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transform: scale(1.0);
+  transition:  transform 0.23s ease-in-out;
 }
 
 nav > button:first-child {
-  color:rgba(211, 35, 220, 0.98);
+  border-start-start-radius: 20px;  
+  border-end-start-radius: 20px;
 }
 
 nav > button:nth-child(2) {
-  color:rgba(35, 94, 220, 0.98);
+  border-start-end-radius: 20px;
+  border-end-end-radius: 20px;  
 }
+
+nav > button:hover {
+  transform: scale(1.13);
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+  z-index: 999;
+}
+
+
 
 section {
   display: flex;
   flex-flow: row wrap;
 }
 
-section > div {
+section > article {
   flex: 1 0 250px;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
+  transform: scale(1.0);
+  transition:  transform 0.23s ease-in-out;
 }
 
-section > div > h2 {
+section > article:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+}
+
+section > article > h2 {
   font-size: calc(20px + 1vw);
   font-weight: 400;
   color: #7f632a;
 }
 
-section > div > details > summary {
+section > article > details > summary {
   font-size: calc(17px + 0.2vw);
   font-weight: 400;
   color: #7f632a;
   margin-top: 10px;
 }
 
-section > div > details > ul {
+section > article > details > ul {
   margin-top: 10px;
   margin-left: 4%;
 }
 
-section > div > details > ul > li {
+section > article > details > ul > li {
   color: #f4f5f6e1;
 }
 
 
-section > div > p {
+section > article > p {
   font-size: calc(17px + 0.2vw);
   color: #f4f5f6e1;
   font-weight: 300;
 }
 
-img { 
+section > article > img { 
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 6px;
   border: 3px solid #817343;
 }
 
+footer {
+  margin-top: 2.0em;
+}
+
+footer img {
+  width: 40px;
+  display: block;
+  aspect-ratio: 1/1;
+  filter:invert(1);
+  margin: 0 auto;
+  border: 0;
+  margin-bottom: 8px;
+}
+
 footer > p {
-  text-align:center;
+  width: 200px;
+  text-align: center;
   padding-bottom: 30px;
+  margin: 0 auto;
 }
 
 footer > p a:link,
 footer > p a:visited {
   color: #f4f5f6e1;
+  text-decoration: none;
 }

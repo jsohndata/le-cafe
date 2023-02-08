@@ -1,6 +1,6 @@
-import Listing from './Listing';
+import Listing from './components/List';
+import Footer from './components/Footer';
 import './App.css';
-import Footer from './Footer';
 
 function App() {
   return (
