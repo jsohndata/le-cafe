@@ -18,7 +18,7 @@ header {
   text-align: center;
   filter: drop-shadow(5px 5px 10px #000000e5);
   z-index: 999;
-  background-image: url("./assets/images/pexels-photo-172289.webp");
+  background-image: url("/public/images/pexels-photo-172289.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

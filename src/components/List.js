@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react"
-import ListingCard from "../ListCard"
+import ListingCard from "./ListCard.js"
 
 export default function List() {
     const [data, setData] = useState()
-    const [attribute, setAttribute] = useState('hot')
+    const [attribute, setAttribute] = useState('iced')
 
     useEffect( ()=>{        
-            fetch(`https://api.sampleapis.com/coffee/${attribute}`)
-                .then(res => res.json())
-                .then(setData)
-                .catch(err => console.err(err))
-
-    },[attribute])
+        fetch(`https://api.sampleapis.com/coffee/${attribute}`)
+            .then(res => res.json())
+            .then(setData)
+            .catch(console.err)
+        },[attribute])
     
     console.log( {data} )
 
@@ -28,9 +27,10 @@ export default function List() {
 
             <section>
             {!data 
-            ? (<></>) 
-            : (data.map( (element) => {
-                return <ListingCard key={element.id} data={element} />})
+                ? (<></>) 
+                : (data.map( (element) => (
+                     <ListingCard 
+                        data={element} />))
             )}
             </section>
         </>
