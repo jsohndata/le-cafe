@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/le-cafe-jsohndata/static/css/main.74d06c82.css",
+    "main.js": "/le-cafe-jsohndata/static/js/main.5e7af288.js",
+    "static/media/pexels-photo-172289.webp": "/le-cafe-jsohndata/static/media/pexels-photo-172289.fbe311454feb875b91a5.webp",
+    "index.html": "/le-cafe-jsohndata/index.html",
+    "main.74d06c82.css.map": "/le-cafe-jsohndata/static/css/main.74d06c82.css.map",
+    "main.5e7af288.js.map": "/le-cafe-jsohndata/static/js/main.5e7af288.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74d06c82.css",
+    "static/js/main.5e7af288.js"
+  ]
+}
