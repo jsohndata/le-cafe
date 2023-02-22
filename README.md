@@ -1,6 +1,6 @@
 # Le Café de jsohnData
+[![Screen Shot](https://jsohndata.github.io/le-cafe/images/screen-shot.png)](https://jsohndata.github.io/le-cafe/)
+
 Creating a coffee listing for Le Café jsohnData. A React project using Fetch API.
 
-[![Screen Shot](./src/assets/images/screen-shot.png)](https://le-cafe-jsohndata.web.app/)
-
-[https://le-cafe-jsohndata.web.app/](https://le-cafe-jsohndata.web.app/)
+[jsohndata.github.io/le-cafe/](https://jsohndata.github.io/le-cafe/)
