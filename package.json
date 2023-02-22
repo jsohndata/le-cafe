@@ -2,7 +2,7 @@
   "name": "d01-react-coffee-cafe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jsohndata.github.io/le-cafe-jsohndata",
+  "homepage": "https://jsohndata.github.io/le-cafe",
   "dependencies": {
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
