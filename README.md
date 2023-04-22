@@ -3,5 +3,7 @@
 
 Creating a coffee listing for Le Café jsohnData. A React project using Fetch API.
 
-## Link(s)
-* [👉 jsohndata.github.io/le-cafe](https://jsohndata.github.io/le-cafe/)
+<br>
+
+## Site
+* 👉 [jsohndata.github.io/le-cafe](https://jsohndata.github.io/le-cafe/)
